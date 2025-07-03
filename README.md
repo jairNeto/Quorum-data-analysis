@@ -79,8 +79,8 @@ For reading additional data columns like "Bill Voted On Date" or "Co-Sponsors", 
 
 ### 3. How would you change your solution if instead of receiving CSVs of data, you were given a list of legislators or bills that you should generate a CSV for?
 
-If I received lists of legislators or bills instead of CSV files, I would create a data validation layer using Pydantic model classes for each data type (Legislator, Bill, Vote, VoteResult). These Pydantic models would ensure data integrity and provide clear schemas for the expected data structure. Once the input lists are validated through these models, I would convert them into pandas DataFrames using the validated Pydantic objects, which would allow me to reuse all the existing processing logic without modification. This approach maintains data quality through validation while preserving the efficient pandas operations for analysis and CSV generation that the current solution relies on.
+If I received lists of legislators or bills instead of CSV files, I would create a data validation layer using Pydantic model classes for each data type (Legislator, Bill, Vote, VoteResult). These Pydantic models would ensure data integrity and provide clear schemas for the expected data structure. Once the input lists are validated through these models, I would convert them into pandas DataFrames using the validated Pydantic objects, which would allow me to reuse all the existing processing logic without modification.
 
 ### 4. How long did you spend working on the assignment?
 
-I spent approximately 1 hour working on this assignment.
+I spent approximately 3 hours working on this assignment.
